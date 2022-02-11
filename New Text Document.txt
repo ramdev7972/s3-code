@@ -1,0 +1,23 @@
+provider "aws" "rudra" {
+region = "__"
+access_key = "__"
+secret_key = "__"
+}
+
+resource "aws_vpc" "main" {
+  cidr_block       = "10.0.0.0/16"
+  instance_tenancy = "default"
+
+  tags = {
+    Name = "main"
+  }
+}
+
+resource "aws_s3_bucket" "omkey73507972" {
+  bucket = "my-tf-test-bucket"
+  acl    = "private"
+
+  tags = {
+    Name = "My bucket"
+  }
+}
