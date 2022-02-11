@@ -1,7 +1,7 @@
 provider "aws" "rudra" {
-region = "__"
-access_key = "__"
-secret_key = "__"
+region = "us-west-1"
+access_key = "AKIAWGAGKTXMIHQEZ2WD"
+secret_key = "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"
 }
 
 resource "aws_vpc" "main" {
